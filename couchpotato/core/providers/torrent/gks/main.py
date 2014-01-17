@@ -47,8 +47,8 @@ class gks(TorrentProvider):
                 results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 17, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
             
             else:
-                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 5, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
-                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 5, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
             
         return results
                    
