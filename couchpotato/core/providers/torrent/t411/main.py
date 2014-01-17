@@ -52,17 +52,17 @@ class t411(TorrentProvider):
             except:
                 TitleStringReal = str(MovieTitle.encode("utf-8").replace('-',' '))
             if moviequality in ['720p']:
-                results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=541&term%5B17%5D%5B%5D=542&term%5B17%5D%5B%5D=719&term%5B7%5D%5B%5D=15")
-                results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=541&term%5B17%5D%5B%5D=542&term%5B17%5D%5B%5D=719&term%5B7%5D%5B%5D=15")
+                results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
+                results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
             elif moviequality in ['1080p']:
-                results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=541&term%5B17%5D%5B%5D=542&term%5B17%5D%5B%5D=719&term%5B7%5D%5B%5D=16")
-                results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=541&term%5B17%5D%5B%5D=542&term%5B17%5D%5B%5D=719&term%5B7%5D%5B%5D=16")
+                results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
+                results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
             elif moviequality in ['dvd-r']:
-                results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=541&term%5B17%5D%5B%5D=542&term%5B17%5D%5B%5D=719&term%5B7%5D%5B%5D=13&term%5B7%5D%5B%5D=14")
-                results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=541&term%5B17%5D%5B%5D=542&term%5B17%5D%5B%5D=719&term%5B7%5D%5B%5D=13&term%5B7%5D%5B%5D=14")
+                results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
+                results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
             elif moviequality in ['br-disk']:
-                results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=541&term%5B17%5D%5B%5D=542&term%5B17%5D%5B%5D=719&term%5B7%5D%5B%5D=17")
-                results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=541&term%5B17%5D%5B%5D=542&term%5B17%5D%5B%5D=719&term%5B7%5D%5B%5D=17")
+                results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
+                results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
             else:
                 results.append(urllib.urlencode( {'search': TitleStringReal, 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
                 results.append(urllib.urlencode( {'search': simplifyString(TitleStringReal), 'cat' : 210, 'submit' : 'Recherche', 'subcat': 631 } ) + "&term%5B17%5D%5B%5D=721")
@@ -123,7 +123,7 @@ class t411(TorrentProvider):
                                     return True
         
                                 new['id'] = idt
-                                new['name'] = name + ' french'
+                                new['name'] = name
                                 new['url'] = url
                                 new['detail_url'] = detail_url
                                 new['size'] = self.parseSize(size)

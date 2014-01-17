@@ -31,20 +31,20 @@ class gks(TorrentProvider):
             except:
                 TitleStringReal = str(MovieTitle.encode("utf-8").replace('-',' '))
             if moviequality in ['720p']:
-                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 15, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
-                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 15, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
             
             elif moviequality in ['1080p']:
-                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 16, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
-                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 16, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
             
             elif moviequality in ['dvd-r']:
-                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 19, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
-                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 19, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
             
             elif moviequality in ['br-disk']:
-                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 17, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
-                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 17, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
+                results.append( urllib.urlencode( {'q': simplifyString(TitleStringReal), 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
             
             else:
                 results.append( urllib.urlencode( {'q': TitleStringReal, 'category' : 6, 'ak' : self.conf('userkey')} ) + "&order=desc&sort=normal&exact" )
